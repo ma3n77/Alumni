@@ -1,0 +1,200 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Arial', sans-serif; Default font family */
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+}
+
+/* Add your custom font family here */
+/* Example using Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif /* Apply the custom font family */
+}
+
+/* Rest of your CSS styles... */
+
+
+header {
+  background: linear-gradient(to right, #142d4c, #333);
+  padding: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #187ead9d;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+} 
+
+
+.images { 
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30;
+}
+
+.main-wpper { 
+  display: flex;
+  align-items: center;
+}
+
+.inner-image img { 
+  width: 70%;
+  height: 70%;
+  padding: 30px;
+  border-radius: 35px;
+  margin-left: 0;
+}
+
+.inner-text { 
+  padding: 30px;
+  font-size: 30px;
+}
+
+.apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-width: 15px;
+  background: url('./1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.apply button {
+  padding: 30px 45px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(to right, #142d4c, #333);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.apply a { 
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.apply button:hover {
+  border-radius: 8px;
+  padding: 28px 43px;
+}
+
+.apply a:hover { 
+  color: grey;
+}
+
+footer {
+  background: linear-gradient(to left, #142d4c, #333);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  header {
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin-right: 5px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+
+  .apply button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  /* .images {
+    width: 100%;
+    height: 100%;
+  } */
+
+  .inner-image img { 
+    width: 100%;
+    height: 100%;
+  }
+
+  .inner-text { 
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .inner-text p { 
+    padding: 15px;
+  }
+}
